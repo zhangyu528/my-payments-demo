@@ -5,17 +5,15 @@ import { FaRocket } from 'react-icons/fa';
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 bg-white shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-black border-b border-gray-800 shadow-sm">
       <div className="flex items-center space-x-3">
-        <FaRocket className="text-2xl text-blue-600" />
-        <span className="text-xl font-bold text-gray-800">Pricing</span>
+        <FaRocket className="text-2xl text-blue-500" />
+        <span className="text-xl font-bold text-white">Pricing</span>
       </div>
       
       <div className="flex items-center space-x-4">
-        <button 
-          className="px-4 py-2 text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-md transition-colors"
-        >
-          Get Started
+        <button className="text-white hover:opacity-80 transition-opacity">
+          Login
         </button>
       </div>
     </nav>
